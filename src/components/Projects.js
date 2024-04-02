@@ -2,6 +2,11 @@ import React from 'react';
 import { ProjectCard } from './ProjectCard';
 import { Container, Row, Col, Tab, Nav } from 'react-bootstrap';
 import projimg1 from '../assets/projeto1.png'; // Import the project image
+import projimg2 from '../assets/piz.png'; // Import the project image
+import projimg3 from '../assets/port.png'; // Import the project image
+import {tabtwo } from './tabtwo';
+
+
 
 import colorSharp2 from "../assets/azul.jpg";
 
@@ -14,34 +19,31 @@ export const Projects = () => {
             link: "https://fernandavv.github.io/ls/"
         },
         {
-            title: "Oruam Na Voz",
-            description: "Oruam Cria",
-            imgUrl: projimg1,
+            title: "Pizza",
+            description: "Projeto em php",
+            imgUrl: projimg2,
+            link: "https://pi-za.vercel.app/"
         },
         {
-            title: "Oruam Na Voz",
-            description: "Oruam Cria",
-            imgUrl: projimg1,
-        },
-        {
-            title: "Oruam Na Voz",
-            description: "Oruam Cria",
-            imgUrl: projimg1,
-        },
-        {
-            title: "Oruam Na Voz",
-            description: "Oruam Cria",
-            imgUrl: projimg1,
+            title: "Portfolio",
+            description: "Projeto em React",
+            imgUrl: projimg3,
+            link: "https://fe-black.vercel.app/"
+
         },
     ];
+
+    
+
+    
 
     return (
         <section className="project" id="project">
             <Container>
                 <Row>
                     <Col>
-                        <h2>Projects</h2>
-                        <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria</p>
+                        <h2>Projetos</h2>
+                        <p>Meus Projetos</p>
                         <Tab.Container id="projects-tabs" defaultActiveKey="first">
                             <Row>
                                 <Col>
@@ -60,20 +62,24 @@ export const Projects = () => {
                             </Row>
                             <Row>
                                 <Col>
-                                    <Tab.Content>
-                                 <Tab.Pane eventKey="first">
-                              <Row>
-                              {projects.map((project, index) => (
-                                <ProjectCard
-                                 key={index}
-                                {...project}
-                                           />
-                                           ))}
-                                        </Row>
-                                        </Tab.Pane>
-                                        <Tab.Pane eventKey="second">Lorem Ipsum</Tab.Pane>
-                                        <Tab.Pane eventKey="third">Lorem Ipsum</Tab.Pane>
-                                    </Tab.Content>
+                                <Tab.Content>
+    <Tab.Pane eventKey="first">
+        <Row>
+            {projects.map((project, index) => (
+                <ProjectCard
+                    key={index}
+                    {...project}
+                />
+            ))}
+        </Row>
+    </Tab.Pane>
+    <Tab.Pane eventKey="second">
+        <h2>Tab Two Content</h2>
+        <p>Este é o conteúdo do segundo tab.</p>
+    </Tab.Pane>
+    <Tab.Pane eventKey="third">Lorem Ipsum</Tab.Pane>
+</Tab.Content>
+
                                 </Col>
                             </Row>
                         </Tab.Container>

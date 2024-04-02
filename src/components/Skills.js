@@ -1,12 +1,11 @@
 import { Container, Row, Col } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import meter1 from "../assets/meter1.png";
-import meter2 from "../assets/meter1.png";
-import meter3 from "../assets/meter1.png";
-import colorSharp from "../assets/color-sharp.png";
-import banner2 from "../assets/banner.jpeg";
-import Banner from "./Banner";
+import meter1 from "../assets/color-sharp (3).png";
+import meter2 from "../assets/color-sharp (2).png";
+import meter3 from "../assets/color-sharp.png";
+import meter4 from "../assets/color-sharp (1).png";
+
 
 const Skills = () => {
   const responsive = {
@@ -38,9 +37,8 @@ const Skills = () => {
                 Skills
                 </h2>
               <p>
-                Lorem Ipsum é simplesmente uma simulação de texto da indústria
-                <br></br>tipográfica e de impressos, e vem sendo utilizado desde o
-                século XVI
+              Como um desenvolvedor Full Stack, trago uma ampla gama de habilidades técnicas e experiência prática 
+                <br></br>que me permite criar soluções robustas e escaláveis em todas as camadas de uma aplicação web. Do front-end ao back-end:
               </p>
               <Carousel responsive={responsive} infinite={true} className="skill-slider">
                 <div className="item">
@@ -49,15 +47,15 @@ const Skills = () => {
                 </div>
                 <div className="item">
                   <img src={meter2} alt="image" />
-                  <h5>Brand Identity</h5>
+                  <h5>Back-End</h5>
                 </div>
                 <div className="item">
                   <img src={meter3} alt="image" />
-                  <h5>Logo Design</h5>
+                  <h5>React</h5>
                 </div>
                 <div className="item">
-                  <img src={meter1} alt="image" />
-                  <h5>Web Developer</h5>
+                  <img src={meter4} alt="image" />
+                  <h5>Java-Script</h5>
                 </div>
               </Carousel>
             </div>
